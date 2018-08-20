@@ -25,13 +25,11 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Row(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Expanded(
               child: Container(
-                height: 200.0,
-                width: 200.0,
                 color: Colors.blueAccent,
                 child: Center(
                     child: Text(
@@ -45,8 +43,6 @@ class Home extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-                height: 200.0,
-                width: 200.0,
                 color: Colors.red,
                 child: Center(
                     child: Text(
@@ -60,8 +56,6 @@ class Home extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-                height: 200.0,
-                width: 200.0,
                 color: Colors.green,
                 child: Center(
                     child: Text(
