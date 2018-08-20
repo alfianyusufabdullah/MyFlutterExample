@@ -28,9 +28,14 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   List<Widget> widgets = new List<Widget>();
 
+  void onTap(int index){
+    print("Click Position $index");
+  }
+
   @override
   void initState() {
     super.initState();
+    print("State");
 
     for (int i = 1; i < 16; i++) {
       widgets.add(
@@ -39,6 +44,7 @@ class _HomeState extends State<Home> {
             leading: Icon(Icons.widgets),
             title: Text('Title'),
             subtitle: Text('Subtitle $i'),
+            onTap: () => onTap(i),
           ),
         ),
       );
