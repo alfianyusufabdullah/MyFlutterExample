@@ -51,11 +51,12 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Container(
-                  child: Text('Item $i' , style: TextStyle(fontSize: 20.0),),
-                ),
-                Container(
-                  child: Text('Desc $i' , style: TextStyle(fontSize: 20.0),),
-                ),
+                  child: ListTile(
+                    leading: Icon(Icons.widgets),
+                    title: Text('Title'),
+                    subtitle: Text('Subtitle $i'),
+                  ),
+                )
               ],
             ),
           ),
