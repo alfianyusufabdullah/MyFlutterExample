@@ -22,7 +22,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  int _radioGroupValue = 0;
+  int _radioGroupValue;
   String _selected = "Hello Flutter";
 
   void _select(int value){
